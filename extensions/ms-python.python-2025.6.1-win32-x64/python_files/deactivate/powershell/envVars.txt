@@ -1,6 +1,6 @@
 ALLUSERSPROFILE=C:\ProgramData
 APPDATA=C:\Users\fnasi\AppData\Roaming
-CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_16728_AMIBXUSREEFXGKVY
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_14064_CPQSSFUNFWCCOTMN
 COMMONPROGRAMFILES=C:\Program Files\Common Files
 COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
 COMMONPROGRAMW6432=C:\Program Files\Common Files
@@ -54,9 +54,9 @@ TERM_PROGRAM=vscode
 TERM_PROGRAM_VERSION=1.100.3
 LANG=en_US.UTF-8
 COLORTERM=truecolor
+VSCODE_ENV_PREPEND=PATH=C\x3a\Users\fnasi\anaconda3\New folder;C\x3a\Users\fnasi\anaconda3\New folder\Library\mingw-w64\bin;C\x3a\Users\fnasi\anaconda3\New folder\Library\usr\bin;C\x3a\Users\fnasi\anaconda3\New folder\Library\bin;C\x3a\Users\fnasi\anaconda3\New folder\Scripts;C\x3a\Users\fnasi\anaconda3\New folder\bin;C\x3a\Users\fnasi\anaconda3\condabin;C\x3a\Program Files\Common Files\Oracle\Java\javapath;C\x3a\windows\system32;C\x3a\windows;C\x3a\windows\System32\Wbem;C\x3a\windows\System32\WindowsPowerShell\v1.0;C\x3a\windows\System32\OpenSSH;C\x3a\Program Files\HP\HP One Agent;C\x3a\WINDOWS\system32;C\x3a\WINDOWS;C\x3a\WINDOWS\System32\Wbem;C\x3a\WINDOWS\System32\WindowsPowerShell\v1.0;C\x3a\WINDOWS\System32\OpenSSH;C\x3a\Program Files\Git\cmd;C\x3a\Users\fnasi\AppData\Local\Programs\Python\Launcher;C\x3a\Users\fnasi\AppData\Local\Microsoft\WindowsApps;C\x3a\Users\fnasi\AppData\Local\Programs\Microsoft VS Code\bin;
 PYDEVD_DISABLE_FILE_VALIDATION=1
 VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=c:\Users\fnasi\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\.noConfigDebugAdapterEndpoints\endpoint-cf4b8cd37c353832.txt
-VSCODE_ENV_PREPEND=PATH=C\x3a\Users\fnasi\anaconda3\New folder;C\x3a\Users\fnasi\anaconda3\New folder\Library\mingw-w64\bin;C\x3a\Users\fnasi\anaconda3\New folder\Library\usr\bin;C\x3a\Users\fnasi\anaconda3\New folder\Library\bin;C\x3a\Users\fnasi\anaconda3\New folder\Scripts;C\x3a\Users\fnasi\anaconda3\New folder\bin;C\x3a\Users\fnasi\anaconda3\condabin;C\x3a\Program Files\Common Files\Oracle\Java\javapath;C\x3a\windows\system32;C\x3a\windows;C\x3a\windows\System32\Wbem;C\x3a\windows\System32\WindowsPowerShell\v1.0;C\x3a\windows\System32\OpenSSH;C\x3a\Program Files\HP\HP One Agent;C\x3a\WINDOWS\system32;C\x3a\WINDOWS;C\x3a\WINDOWS\System32\Wbem;C\x3a\WINDOWS\System32\WindowsPowerShell\v1.0;C\x3a\WINDOWS\System32\OpenSSH;C\x3a\Program Files\Git\cmd;C\x3a\Users\fnasi\AppData\Local\Programs\Python\Launcher;C\x3a\Users\fnasi\AppData\Local\Microsoft\WindowsApps;C\x3a\Users\fnasi\AppData\Local\Programs\Microsoft VS Code\bin;
 BUNDLED_DEBUGPY_PATH=c:\Users\fnasi\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\libs\debugpy
 GIT_ASKPASS=c:\Users\fnasi\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\git\dist\askpass.sh
 VSCODE_GIT_ASKPASS_NODE=C:\Users\fnasi\AppData\Local\Programs\Microsoft VS Code\Code.exe
@@ -79,5 +79,5 @@ SSL_CERT_FILE=C:\Users\fnasi\anaconda3\New folder\Library\ssl\cacert.pem
 _CONDA_OLD_CHCP=850
 __CONDA_OPENSLL_CERT_FILE_SET="1"
 VSCODE_INJECTION=1
-VSCODE_NONCE=0f740f7d-89ca-4473-a02a-ca0ca542c42c
+VSCODE_NONCE=fe4c17fc-7c30-4ad6-947d-824ca145a50a
 VSCODE_STABLE=1
