@@ -77,5 +77,4 @@ if(predict_btn):
     with col16:
         st.text(f"Estimated salary: ${int(salary[0])}") # Displaying the estimated salary
     with col17:
-        st.write('')
-
+        st.write('') 
