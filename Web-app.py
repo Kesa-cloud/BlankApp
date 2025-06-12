@@ -1,9 +1,13 @@
 import pickle
+
+# For numerical ops
 import numpy as np
+
+# For creating the web app
 import streamlit as st
 
 model = pickle.load(open('model.pkl', 'rb'))
-
+#Centering the title
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
 with col0:
     st.write('')
@@ -20,6 +24,7 @@ with col5:
 with col6:
     st.write('')
 
+# Centering the description of the app
 col7, col8, col9 = st.columns(3)
 with col7:
     st.write('')    
@@ -28,17 +33,20 @@ with col8:
 with col9:
     st.write('')
 
-gen_list = ["Female", "Male"]
-edu_list = ["Bachelor's", "Master's", "PhD"]
-job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scientist", "Senior Financial Analyst", "Senior Software Engineer"]
+# Input options for the user
+gen_list = ["Female", "Male"] # Gender/Sex
+edu_list = ["Bachelor's", "Master's", "PhD"] # Education level
+job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scientist", "Senior Financial Analyst", "Senior Software Engineer"] # Job titles/ positions
 job_idx = [0, 1, 10, 11, 20]
 
-gender = st.radio('Pick your gender', gen_list)
-age = st.slider('Pick your age', 15, 70)
-education = st.selectbox('Pick your education level', edu_list)
-job = st.selectbox('Pick your job title', job_list)
-experience = st.slider('Pick your years of experience', 0.0, 25.0, 0.0, 0.5, "%1f")
+# Input fields for the user i.e, prompts
+gender = st.radio('Pick your gender', gen_list) # Choose between male and female
+age = st.slider('Pick your age', 21, 70) # Age range from 21 to 70 using a slider
+education = st.selectbox('Pick your education level', edu_list) # Choose between Bachelor's, Master's, and PhD
+job = st.selectbox('Pick your job title', job_list) # Choose between different job titles
+experience = st.slider('Pick your years of experience', 0.0, 25.0, 0.0, 0.5, "%1f") # Years of experience using a slider
 
+# Centering the predict button
 col10, col11, col12, col13, col14 = st.columns(5)
 with col10:
     st.write('')
@@ -51,19 +59,22 @@ with col13:
 with col14:
     st.write('')
 
+
 if(predict_btn):
-    inp1 = int(age)
-    inp2 = float(experience)
-    inp3 = int(job_idx[job_list.index(job)])
-    inp4 = int(edu_list.index(education))
-    inp5 = int(gen_list.index(gender))
-    X = [inp1, inp2, inp3, inp4, inp5]
-    salary = model.predict([X])
-    col15, col16, col17 = st.columns(3)
+    inp1 = int(age) # Converts age to integer
+    inp2 = float(experience) # Converts experience to float
+    inp3 = int(job_idx[job_list.index(job)]) # Gets the index of the job title in numerical form
+    inp4 = int(edu_list.index(education)) # Gets the index of the education level in numerical form
+    inp5 = int(gen_list.index(gender)) # Get the index of the gender in numerical form
+    X = [inp1, inp2, inp3, inp4, inp5] # Formating input data as a list
+    salary = model.predict([X]) # Predicting the salary using the model
+    
+    # Centering the estimated salary
+    col15, col16, col17 = st.columns(3) 
     with col15:
         st.write('')    
     with col16:
-        st.text(f"Estimated salary: ${int(salary[0])}")
+        st.text(f"Estimated salary: ${int(salary[0])}") # Displaying the estimated salary
     with col17:
         st.write('')
 
