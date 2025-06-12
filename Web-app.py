@@ -16,7 +16,7 @@ with col1:
 with col2:
     st.write('')    
 with col3:
-    st.title("ⴍage") 
+    st.title("Salary") # Title of the app
 with col4:
     st.write('')
 with col5:
@@ -40,11 +40,11 @@ job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scie
 job_idx = [0, 1, 10, 11, 20]
 
 # Input fields for the user i.e, prompts
-gender = st.radio('Pick your gender', gen_list) # Choose between male and female
-age = st.slider('Pick your age', 21, 70) # Age range from 21 to 70 using a slider
-education = st.selectbox('Pick your education level', edu_list) # Choose between Bachelor's, Master's, and PhD
-job = st.selectbox('Pick your job title', job_list) # Choose between different job titles
-experience = st.slider('Pick your years of experience', 0.0, 25.0, 0.0, 0.5, "%1f") # Years of experience using a slider
+gender = st.radio('Choose your gender', gen_list) # Choose between male and female
+age = st.slider('Choose your age', 21, 70) # Age range from 21 to 70 using a slider
+education = st.selectbox('Choose your education level', edu_list) # Choose between Bachelor's, Master's, and PhD
+job = st.selectbox('Choose your job title', job_list) # Choose between different job titles
+experience = st.slider('Input your years of experience', 0.0, 25.0, 0.0, 0.5, "%1f") # Years of experience using a slider
 
 # Centering the predict button
 col10, col11, col12, col13, col14 = st.columns(5)
