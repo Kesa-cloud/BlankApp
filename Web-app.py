@@ -1,3 +1,4 @@
+#Python module used for serializing and deserializing Python objects
 import pickle
 
 # For numerical ops
