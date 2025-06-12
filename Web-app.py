@@ -1,4 +1,4 @@
-#Python module used for serializing and deserializing Python objects
+# Module used in loading pre trained modules
 import pickle
 
 # For numerical ops
@@ -7,7 +7,9 @@ import numpy as np
 # For creating the web app
 import streamlit as st
 
+# Loading the pre trained module we were given
 model = pickle.load(open('model.pkl', 'rb'))
+
 #Centering the title
 col0, col1, col2, col3, col4, col5, col6 = st.columns(7)
 with col0:
@@ -35,10 +37,10 @@ with col9:
     st.write('')
 
 # Input options for the user
-gen_list = ["Female", "Male"] # Gender/Sex
-edu_list = ["Bachelor's", "Master's", "PhD"] # Education level
-job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scientist", "Senior Financial Analyst", "Senior Software Engineer"] # Job titles/ positions
-job_idx = [0, 1, 10, 11, 20]
+gen_list = ["Female", "Male"] # Lists the Gender/Sex options
+edu_list = ["Bachelor's", "Master's", "PhD"] # Lists the Education levels
+job_list = ["Director of Marketing", "Director of Operations", "Senior Data Scientist", "Senior Financial Analyst", "Senior Software Engineer"] # Lists the Job titles/ positions
+job_idx = [0, 1, 10, 11, 20]# Encoded job indexes for prediction
 
 # Input fields for the user i.e, prompts
 gender = st.radio('Choose your gender', gen_list) # Choose between male and female
@@ -54,7 +56,7 @@ with col10:
 with col11:
     st.write('')    
 with col12:
-    predict_btn = st.button('Predict Salary')
+    predict_btn = st.button('Predict Salary') # Button that triggers prediction
 with col13:
     st.write('')
 with col14:
